@@ -1,14 +1,10 @@
 package utils;
 
-import sun.misc.IOUtils;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +25,7 @@ public class FileHelper {
         return out;
     }
 
-    public List<Integer> readFileAsInts(String fileName) {
+    public List<Integer> readFileAsIntegerss(String fileName) {
         return readFile(fileName).stream().map(Integer::valueOf).collect(Collectors.toList());
     }
 }
